@@ -1,20 +1,20 @@
 class Omniplayr < Formula
   desc "OmniPlayr CLI"
-  homepage "https://github.com/your-org/omniplayr-cli"
-  version "1.0.0"
+  homepage "https://github.com/OmniPlayr/OmniPlayr-CLI"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/your-org/omniplayr-cli/releases/download/v1.0.0/omniplayr-macos-arm64"
+      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v0.0.1/omniplayr-macos-arm64"
       sha256 "PLACEHOLDER"
     else
-      url "https://github.com/your-org/omniplayr-cli/releases/download/v1.0.0/omniplayr-macos-x64"
+      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v0.0.1/omniplayr-macos-x64"
       sha256 "PLACEHOLDER"
     end
   end
 
   on_linux do
-    url "https://github.com/your-org/omniplayr-cli/releases/download/v1.0.0/omniplayr-linux"
+    url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v0.0.1/omniplayr-linux"
     sha256 "PLACEHOLDER"
   end
 
