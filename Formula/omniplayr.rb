@@ -1,24 +1,24 @@
 class Omniplayr < Formula
   desc "OmniPlayr CLI"
   homepage "https://github.com/OmniPlayr/OmniPlayr-CLI"
-  version "1.1.0"
+  version "1.2.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.1.0/omniplayr-macos-arm64"
+      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.2.1/omniplayr-macos-arm64"
       sha256 "cd31f73714859030c269e8a7e1c4ab50db831da55128edac6658a64b40335dd4"
     else
-      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.1.0/omniplayr-macos-x64"
+      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.2.1/omniplayr-macos-x64"
       sha256 "REPLACE_ME"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.1.0/omniplayr-linux-arm64"
-      sha256 "REPLACE_ME_ARM"
+      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.2.1/omniplayr-linux-arm64"
+      sha256 "f777e7d97cdf700b1c011e649147ab0f682739b74dc661a7c19281bc0f43f4db"
     else
-      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.1.0/omniplayr-linux"
+      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.2.1/omniplayr-linux"
       sha256 "f777e7d97cdf700b1c011e649147ab0f682739b74dc661a7c19281bc0f43f4db"
     end
   end
