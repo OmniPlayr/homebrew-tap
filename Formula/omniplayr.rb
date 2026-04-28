@@ -14,8 +14,13 @@ class Omniplayr < Formula
   end
 
   on_linux do
-    url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.1.0/omniplayr-linux"
-    sha256 "f777e7d97cdf700b1c011e649147ab0f682739b74dc661a7c19281bc0f43f4db"
+    if Hardware::CPU.arm?
+      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.1.0/omniplayr-linux-arm64"
+      sha256 "SHA_LINUX_ARM"
+    else
+      url "https://github.com/OmniPlayr/OmniPlayr-CLI/releases/download/v1.1.0/omniplayr-linux"
+      sha256 "SHA_LINUX"
+    end
   end
 
   def install
